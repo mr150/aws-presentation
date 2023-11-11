@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Облака и serverless для разработки и бизнеса</title>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body class="shower list">
+
+		<header class="caption">
+			<h1>Облака и serverless для разработки и бизнеса</h1>
+			<p>
+				Валентин Ульянов,
+				4spaces
+				<time datetime="2023-11-12">11.2023</time>
+			</p>
+		</header>
+
+		<section class="slide slide--first slide--no-number">
+			<h2>Облака и serverless для разработки и бизнеса</h2>
+			<div class="D-f Ai-fs Jc-sb">
+				<img src="pictures/future-wave.png" width="256" alt="Логотип Future Wave">
+				<p class="slide__author">Валентин Ульянов<br>
+					<img src="pictures/4spaces.png" width="128" alt="Логотип 4spaces">
+				</p>
+			</div>
+			<img class="cover" src="pictures/heart.jpg" alt="Облако">
+		</section>
+
+		<section class="slide">
+			<h2>Обо мне</h2>
+			<div class="D-f Ai-fs">
+				<img class="Mr64" alt="Фото Валентина Ульянова" src="pictures/me.jpg" width="261"/>
+				<ul>
+					<li>В разработке >5 лет (3.5 фронт, 1.5 бэк)</li>
+					<li>Делаю бэкенд на Node.js, TypeScript и AWS</li>
+					<li>Пилю open source проект</li>
+					<li>Люблю свободное ПО, Linux и изобретательство</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="slide">
+			<img class="cover" src="pictures/default-arch.png" alt="Стандартная архитектура приложения">
+		</section>
+
+		<section class="slide">
+			<img class="cover" style="width:75%" src="pictures/real-arch.png" alt="Реальная архитектура приложения">
+		</section>
+
+		<section class="slide">
+			<h2>Облачные платформы</h2>
+			<p>Набор интегрированных сервисов, для хранения данных, вычислений и много другого в облачной инфраструктуре</p>
+			<ul>
+				<li>Провайдер предоставляет инфраструктуру и системный софт</li>
+				<li>Вы решаете задачи бизнеса</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<img class="cover" src="pictures/aws-arch.svg" alt="Архитектура приложения в облаках">
+		</section>
+
+		<section class="slide">
+			<h2>Главная мысль</h2>
+			<blockquote>
+				<p>
+					Облачные платформы позволяют вам меньше думать про инфраструктуру и технологии, а больше про бизнес и его задачи
+				</p>
+			</blockquote>
+		</section>
+		
+		<section class="slide slide--no-number">
+			<h2 class="shout">Сервисы и возможности<br> AWS</h2>
+		</section>
+
+		<section class="slide">
+			<img class="cover" src="pictures/aws-regions.png" alt="Регионы и датацентры в AWS">
+		</section>
+
+		<section class="slide">
+			<h2>Инфраструктура AWS</h2>
+			<ul>
+				<li><b>Region</b> - географическое место расположение группы дата-центров</li>
+				<li><b>Availablility zone</b> - независимый дата-центр</li>
+			</ul>
+			<p>В каждом регионе, минимум 2 availablility zone</p>
+		</section>
+
+		<section class="slide Pt64">
+			<h2>Сервисы AWS</h2>
+			<p>Всего их больше 100, но несколько основных мы рассмотрим сегодня:</p>
+			<ul>
+				<li><b>S3</b> - файловое хранилище</li>
+				<li><b>Lambda</b> - облачные функции</li>
+				<li><b>API Gateway</b> - API и роутинг</li>
+				<li><b>DynamoDB</b> - распределенная NoSQL база данных</li>
+				<li><b>EC2</b> - сервера</li>
+				<li><b>CloudFront</b> - CDN</li>
+				<li><b>SQS</b> - очередь сообщений</li>
+			</ul>
+		</section>
+
+		<section class="slide slide--no-number">
+			<img class="cover" src="pictures/top-services.png" alt="Частоиспользуемые сервисы">
+		</section>
+		
+		<section class="slide slide--no-number">
+			<h2 class="shout">Serverless</h2>
+		</section>
+
+		<section class="slide">
+			<h2>Что такое serverless</h2>
+			<p>
+				Подход к разработке, при котором, для исполнения логики, используются бессерверные вычисления: облачные функции и/или serverless-контейнеры. Большая часть инфраструктуры(или она вся), при этом, также поставляется провайдером
+			</p>
+			<ul>
+				<li>Мы не арендуем сервера, не разворачиваем и не поддерживаем сами ПО на серверах и т.д.</li>
+				<li>Платим только за использованные ресурсы</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h2>Области применения</h2>
+			<ul>
+				<li>Автоматизация инфраструктуры</li>
+				<li>Обработка данных</li>
+				<li>API и cайты</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h2>Популярные ЯП в serverless</h2>
+			<ol>
+				<li>Node.js</li>
+				<li>Python</li>
+				<li>Golang</li>
+			</ol>
+			<ul class="langs-list">
+				<li>
+					<img alt="Node.js" width="160" src="pictures/node.png"/>
+				</li>
+				<li>
+					<img alt="Python" width="160" src="pictures/python.svg"/>
+				</li>
+				<li>
+					<img alt="Golang" width="160" src="pictures/go.png"/>
+				</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h2>Serverless стек</h2>
+			<div class="D-g Gap2r Gtc-t2">
+				<div>
+					<h3>Вычисления</h3>
+					<ul>
+						<li>Lambda</li>
+						<li>Serverless Containers</li>
+						<li>Triggers</li>
+						<li>API Gateway</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Сервисы данных</h3>
+					<ul>
+						<li>S3</li>
+						<li>DynamoDB</li>
+						<li>SQS</li>
+						<li>Kinesis</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="slide">
+			<h2>Событийно-ориентированная архитектура</h2>
+			<ul>
+				<li>Без событий, ваша система "спит". Ничего не "крутится" на сервере</li>
+				<li>Ассинхронность - ключевой принцип</li>
+				<li>Stateless - (почти)не можете хранить состояние в памяти</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h2>Примеры событий</h2>
+			<ul>
+				<li>Запрос на API</li>
+				<li>Вызов по расписанию</li>
+				<li>Запись в базу данных</li>
+				<li>Появление сообщения в очереди</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<img class="cover" src="pictures/eda.webp" alt="Схема EDA">
+		</section>
+
+		<section class="slide slide--no-number Pt64">
+			<h2>Простая serverless-архитектура</h2>
+			<img class="W100p" src="pictures/serverless-arch.webp" alt="Serverless архитектура">
+		</section>
+
+		<section class="slide">
+			<h2>Преимущества</h2>
+			<ul>
+				<li>Не думаем про инфраструктуру</li>
+				<li>Автоматическое масштабирование</li>
+				<li>Pay as you go: без нагрузки, цена: ~0$</li>
+				<li>Стоимость напрямую зависит от качества кода и архитектуры</li>
+			</ul>
+			<p>Хорошо подходит для MVP, PoC и B2B сервисов с небольшим трафиком</p>
+		</section>
+
+		<section class="slide">
+			<h2>Слабые стороны</h2>
+			<ul>
+				<li>Vendor-lock</li>
+				<li>С плохой архитектурой, можно попасть на деньги</li>
+				<li>С определенной нагрузки, дороже, чем сервера</li>
+				<li>Холодный старт лямбд</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h2>Паттерн "Монолитная lambda"</h2>
+			<ol>
+				<li>Пишем небольшое монолитное приложение, используя средний фреймворк</li>
+				<li>Подключаем адаптер для запросов из api gateway</li>
+				<li>Запаковываем приложение в бандл, например с webpack</li>
+				<li>Создаем лямбду и загружаем в нее наш бандл</li>
+				<li>Profit!</li>
+			</ol>
+		</section>
+
+		<section class="slide slide--no-number">
+			<h2 class="shout">Кейсы</h2>
+		</section>
+
+		<section class="slide">
+			<h2>AI Boost</h2>
+			<p>Приложение, для создания и обработки картинок с помощью AI. Основное приложение под IOS, но в разработке PWA под web и Android</p>
+			<ul>
+				<li>API: монолитная лямбда</li>
+				<li>Scheduled jobs на лямбдах</li>
+				<li>Данные: Dynamodb, SQS, S3, EFS, Google Sheets</li>
+				<li>ML-скрипты на EC2</li>
+			</ul>
+		</section>
+
+		<section class="slide slide--no-number">
+			<img class="cover" src="pictures/ai-boost.jpg" alt="Архитектура AI Boost">
+		</section>
+
+		<section class="slide">
+			<h2>Polyglot</h2>
+			<p>Сервис для локализации приложений. Готов SDK для IOS и частично под web, остальные платформы в разработки</p>
+			<ul>
+				<li>API: монолитная лямбда</li>
+				<li>Scheduled jobs на лямбдах</li>
+				<li>Данные: Dynamodb, S3, Google Sheets</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h2>Нужно больше кейсов</h2>
+			<ul>
+				<li><a href="https://youtu.be/CskI8Z_z4cw?si=ohbsR_YlQWh2TZPA" target="blank">Whoosh</a></li>
+				<li><a href="https://youtu.be/v14wSKn7A4A?si=J2ShENB4ewmYYXYj" target="blank">Яндекс.доставка</a></li>
+				<li><a href="https://youtu.be/FOCDEk-OLTI?si=Fs3XNa3xY292bnfj" target="blank">Обработка озера данных</a></li>
+				<li><a href="https://youtu.be/TT7Y_BU1qOc?si=FP8v0De4fPLgwDw0" target="blank">Serverless в FoodTech</a></li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h2>Главная мысль</h2>
+			<blockquote>
+				<p>
+					Облачные платформы позволяют вам меньше думать про инфраструктуру и технологии, а больше про бизнес и его задачи
+				</p>
+			</blockquote>
+		</section>
+
+		<section class="slide">
+			<h2>Вопросы?</h2>
+			<div class="D-g Gap2r Gtc-t2">
+				<div>
+					<em>Валентин Ульянов</em>
+					<ul>
+						<li><a href="https://twitter.com/mr150_" target="blank">x.com/mr150_</a></li>
+						<li><a href="https://github.com/mr150" target="blank">github.com/mr150</a></li>
+						<li><a href="https://t.me/he150" target="blank">t.me/he150</a></li>
+					</ul>
+					<span>
+						Презентация: <a href="https://vk.cc/csiKAZ" target="blank">vk.cc/csiKAZ</a>
+					</span>
+				</div>
+				<div>
+					<div>Чат местного IT-сообщества:</div>
+					<a style="background: none" href="https://t.me/+eqGHgl5suvwyYTg6" target="blank">
+						<img width="300" src="pictures/chat.jpg" alt="qr-код на чат">
+					</a>
+				</div>
+			</div>
+		</section>
+
+<footer class="badge">
+	<a href="https://github.com/shower/shower" target="blank">Powered by Shower</a>
+</footer>
+
+<div class="progress"></div>
+
+<script src="shower/shower.min.js"></script>
+
+</body>
+</html>

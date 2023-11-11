@@ -1,0 +1,120 @@
+.slide--first{
+	padding-top: 40px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.slide--first h2 {
+	font-size: 85px;
+}
+
+.slide--first .cover {
+	opacity: 0.5;
+	width: 120%;
+	max-width: none;
+	max-height: none;
+}
+
+.slide__author{
+	font-size: 36px;
+	line-height: 1.5;
+	text-align: right;
+}
+
+h3 {
+	margin-bottom: 0.83em;
+	color: #585a5e;
+	font: 700 36px/1 PT Sans Narrow,sans-serif;
+}
+
+.slide--no-number::after{
+	visibility: hidden;
+}
+
+.slide--shout .shout{
+	font-size: 250px;
+}
+
+:focus{
+	outline: 3px #629eff solid;
+}
+
+.D-f{
+	display: flex;
+}
+
+.Ai-fs {
+	align-items: flex-start;
+}
+
+.W6c{
+	width: 50%;
+}
+
+.slide .BF_D-n:before {
+	display: none;
+}
+
+.slide .Fz32 {
+	font-size: 2rem;
+}
+
+.Mr64 {
+	margin-right: 64px;
+}
+
+.Pt64 {
+	padding-top: 64px;
+}
+
+.Pr160 {
+	padding-right: 160px;
+}
+
+.slide .Mb8 {
+	margin-bottom: 8px;
+}
+
+.Fz12 {
+	font-size: 10px;
+	line-height: normal;
+}
+
+.D-g {
+	display: grid;
+}
+
+.Gap2r {
+	gap: 2rem;
+}
+
+.Gtc-t2 {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.W100p {
+	width: 100%;
+}
+
+.Jc-sb {
+	justify-content: space-between;
+}
+
+.langs-list {
+	display: flex;
+	gap: 40px;
+	margin-top: 3rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.slide .langs-list li {
+	text-indent: 0px;
+}
+
+.slide .langs-list.langs-list li::before {
+	content: none;
+	padding: 0px;
+}
